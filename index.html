@@ -2100,7 +2100,9 @@ Please verify my payment and send the activation code to my email.
 
 Thank you,
 
+
 ${currentUser.username}`
+
 ****please click send button to send this mail to the admin****
             );
             
@@ -2114,7 +2116,7 @@ ${currentUser.username}`
             const codeInput = document.getElementById('activationCode').value.trim().toUpperCase();
             
             if (!codeInput || codeInput.length !== 11) {
-                showError('Please enter a valid activation code (********)');
+                showError('Please enter a valid activation code (format: ABC-123)');
                 return;
             }
             
